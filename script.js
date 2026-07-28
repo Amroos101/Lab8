@@ -47,3 +47,9 @@ student.addCourse("machine learning");
 console.log(student.courses);
 console.log(student.getTotalCourses());
 
+let sum = scores.reduce(function(total, score) {
+    return total + score;
+}, 0);
+
+let averageScore = sum / scores.length;
+console.log(averageScore);
