@@ -31,3 +31,19 @@ let { name, courses } = student;
 console.log(name);
 console.log(courses);
 
+let scores = [85, 92, 78, 90];
+let [firstScore, secondScore] = scores;
+console.log(firstScore);
+console.log(secondScore);
+
+let clonedStudent = { ...student, graduationYear: 2028 };
+console.log(clonedStudent);
+
+let newCourses = ["full stack development", "python"];
+let mergedCourses = [...student.courses, ...newCourses];
+console.log(mergedCourses);
+
+student.addCourse("machine learning");
+console.log(student.courses);
+console.log(student.getTotalCourses());
+
