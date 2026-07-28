@@ -17,3 +17,17 @@ let student = {
     }
 };
 
+console.log(student.name);
+console.log(student.age);
+student.displayInfo();
+
+let studentJSON = JSON.stringify(student);
+console.log(studentJSON);
+
+let parsedStudent = JSON.parse(studentJSON);
+console.log(parsedStudent);
+
+let { name, courses } = student;
+console.log(name);
+console.log(courses);
+
